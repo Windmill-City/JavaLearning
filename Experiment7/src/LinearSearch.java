@@ -13,19 +13,24 @@ public class LinearSearch {
                 "Artist 4",
                 "Artist 5"
         };
-        linearSearch(artists, "Artist 3");
-        linearSearch(artists, "Artist 6");
+        String[] toSearches = {"Artist 3", "Artist 6"};
+        for (String toSearch : toSearches) {
+            int index = linearSearch(artists, toSearch);
+            if (index != -1)
+                System.out.printf("Found \"%s\" at %d in [%s]%n", toSearch, index,
+                        Arrays.stream(artists).map(e -> String.format("%n%s,", e)).reduce("", String::concat));
+            else
+                System.out.printf("\"%s\" not found in [%s]%n", toSearch,
+                        Arrays.stream(artists).map(e -> String.format("%n%s,", e)).reduce("", String::concat));
+        }
     }
 
-    public static void linearSearch(String[] artists, String toSearch) {
+    public static int linearSearch(String[] artists, String toSearch) {
         for (int i = 0; i < artists.length; i++) {
             if (artists[i].equals(toSearch)) {
-                System.out.printf("Found \"%s\" at %d in [%s]%n", toSearch, i,
-                        Arrays.stream(artists).map(e -> String.format("%n%s,", e)).reduce("", String::concat));
-                return;
+                return i;
             }
         }
-        System.out.printf("\"%s\" not found in [%s]%n", toSearch,
-                Arrays.stream(artists).map(e -> String.format("%n%s,", e)).reduce("", String::concat));
+        return -1;
     }
 }
