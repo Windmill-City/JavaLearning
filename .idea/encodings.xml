@@ -2,6 +2,12 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Experiment8/src/MyLink.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Experiment9/src/AbstractCaseDemo02.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Experiment9/src/AdapterDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Experiment9/src/InterfaceCaseDemo02.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Experiment9/src/InterfaceCaseDemo03.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Experiment9/src/InterfaceCaseDemo04.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Experiment9/src/ProxyDemo.java" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
